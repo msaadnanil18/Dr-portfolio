@@ -11,8 +11,8 @@ const Contact = () => {
   };
 
   const handleWhatsAppClick = () => {
-    const phoneNumber = 9990639211
-    const whatsappUrl = `https://api.whatsapp.com/send?phone=${encodeURIComponent(phoneNumber)}`;
+   
+    const whatsappUrl = 'https://api.whatsapp.com/send?phone=9990639211';
     window.open(whatsappUrl, '_blank');
   };
 
