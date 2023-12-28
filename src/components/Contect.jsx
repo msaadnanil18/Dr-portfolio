@@ -1,5 +1,6 @@
 import React from 'react';
 import { Typography, Form, Input, Button } from 'antd';
+import { WhatsAppOutlined} from '@ant-design/icons';
 
 const { Title, Paragraph } = Typography;
 
@@ -9,14 +10,22 @@ const Contact = () => {
     console.log('Received values:', values);
   };
 
+  const handleWhatsAppClick = () => {
+    const phoneNumber = 9990639211
+    const whatsappUrl = `https://api.whatsapp.com/send?phone=${encodeURIComponent(phoneNumber)}`;
+    window.open(whatsappUrl, '_blank');
+  };
+
   return (
     <section id="contact" className="py-8">
-      <Title level={2} className="mb-4">
+      <Title level={2} className="mb-4 gap-x-3 ">
         Contact Me
+       <Button icon={ <WhatsAppOutlined />} onClick={handleWhatsAppClick} />
       </Title>
       <Paragraph>
         If you have any questions or would like to schedule an appointment,
         please feel free to reach out to me.
+        
       </Paragraph>
       <Form
         name="contact-form"
