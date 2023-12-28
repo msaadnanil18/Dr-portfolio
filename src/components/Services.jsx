@@ -2,6 +2,7 @@ import React, { useRef } from 'react';
 import { Typography, Card, Row, Col } from 'antd';
 import { useSpring, animated, config } from 'react-spring';
 import { useInView } from 'react-intersection-observer';
+// import image from /src/assets/images/Cardio.jpg
 
 const { Title, Paragraph } = Typography;
 
@@ -10,17 +11,17 @@ const Services = () => {
     {
       title: 'Orthopedic Physiotherapy',
       description: 'Specialized treatment for musculoskeletal conditions.',
-      image: '/src/assets/images/Cardio.jpg',
+      image: 'https://img.freepik.com/free-vector/sports-physiotherapy-illustration_23-2150076874.jpg?size=626&ext=jpg&ga=GA1.1.1204458583.1703752941&semt=ais',
     },
     {
       title: 'Sports Injury Rehabilitation',
       description: 'Tailored programs to help athletes recover from injuries.',
-      image: '/src/assets/images/sport.jpg',
+      image: 'https://img.freepik.com/free-vector/orthopedic-concept-illustration_114360-8774.jpg?size=626&ext=jpg&ga=GA1.1.1204458583.1703752941&semt=ais',
     },
     {
       title: 'Post-Surgery Recovery',
       description: 'Supportive care to enhance recovery after surgery.',
-      image: '/src/assets/images/Therapeutic.jpg',
+      image: 'https://img.freepik.com/free-vector/rehabilitation-therapy-set_1284-37841.jpg?size=626&ext=jpg&ga=GA1.1.1204458583.1703752941&semt=ais',
     },
    
   ];
