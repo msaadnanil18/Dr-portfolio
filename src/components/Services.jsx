@@ -10,17 +10,17 @@ const Services = () => {
     {
       title: 'Orthopedic Physiotherapy',
       description: 'Specialized treatment for musculoskeletal conditions.',
-      image: 'public/Cardio.jpg',
+      image: '/public/Cardio.jpg',
     },
     {
       title: 'Sports Injury Rehabilitation',
       description: 'Tailored programs to help athletes recover from injuries.',
-      image: 'public/sport.jpg',
+      image: '/public/sport.jpg',
     },
     {
       title: 'Post-Surgery Recovery',
       description: 'Supportive care to enhance recovery after surgery.',
-      image: 'public/Therapeutic.jpg',
+      image: '/public/Therapeutic.jpg',
     },
     // Add more services
   ];
