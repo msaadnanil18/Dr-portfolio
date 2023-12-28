@@ -20,7 +20,7 @@ const Experience = () => {
   ];
 
   return (
-    <section id="experience" className="py-8">
+    <section  id="experienceSection" className="py-8">
       <Title level={2} className="mb-4">
         Professional Experience
       </Title>

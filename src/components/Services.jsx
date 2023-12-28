@@ -8,20 +8,25 @@ const Services = () => {
     {
       title: 'Orthopedic Physiotherapy',
       description: 'Specialized treatment for musculoskeletal conditions.',
+      image:'src/images/Cardio.jpg'
+      
     },
     {
       title: 'Sports Injury Rehabilitation',
       description: 'Tailored programs to help athletes recover from injuries.',
+      image:'src/images/sport.jpg'
     },
     {
       title: 'Post-Surgery Recovery',
       description: 'Supportive care to enhance recovery after surgery.',
+      image:'src/images/Therapeutic.jpg'
     },
     // Add more services
   ];
 
   return (
     <section id="services" className="py-8">
+      <div className='p-5' >
       <Title level={2} className="mb-4">
         Our Services
       </Title>
@@ -32,12 +37,16 @@ const Services = () => {
               title={service.title}
               hoverable
               className="text-center"
+              cover={<img src={service.image} alt="" />}
             >
+             
               <Paragraph>{service.description}</Paragraph>
             </Card>
           </Col>
         ))}
       </Row>
+      
+      </div>
     </section>
   );
 };
