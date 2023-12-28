@@ -1,9 +1,12 @@
 import React from 'react';
-import { Menu } from 'antd';
+import { Menu, Layout } from 'antd';
 import { Link } from 'react-scroll';
+const { Header } = Layout;
 
 const AppHeader = () => {
   return (
+    <Header>
+    <div className="logo" />
     <Menu mode="horizontal" theme="dark">
       <Menu.Item key="home">
         <Link to="home" spy={true} smooth={true} duration={500}>
@@ -31,6 +34,7 @@ const AppHeader = () => {
         </Link>
       </Menu.Item>
     </Menu>
+    </Header>
   );
 };
 

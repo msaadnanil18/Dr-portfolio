@@ -7,6 +7,7 @@ import Contact from './components/Contect';
 import Footer from './components/Footer';
 
 const App = () => {
+  
   return (
     <div>
      <AppHeader />
